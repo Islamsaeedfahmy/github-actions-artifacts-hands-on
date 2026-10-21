@@ -25,8 +25,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: list files
-        run: ls -lrth
-        
+        run: ls -larth
+
       - name: Download file
         uses: actions/download-artifact@v4
         with:
