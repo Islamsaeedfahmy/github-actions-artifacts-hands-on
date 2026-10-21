@@ -24,14 +24,13 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        
+      - name: Download file
+        uses: actions/download-artifact@v4
+
       - name: list files
         run: ls -larth
 
-      - name: Download file
-        uses: actions/download-artifact@v4
-        with:
-          name: hello-artifact
-          path: hello.txt
 
-      - name: display hello file
-        run: cat hello.txt
+      # - name: display hello file
+      #   run: cat hello.txt
