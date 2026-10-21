@@ -28,13 +28,13 @@ jobs:
       - name: Download file
         uses: actions/download-artifact@v4
         with:
-          name: ./artifacts
+          name: artifacts
           path: hello.txt
 
       - name: list files
         run: ls -larth
       - name:
-        run: cat ./artifacts/hello.txt
+        run: cat artifacts/hello.txt
 
       # - name: display hello file
       #   run: cat hello.txt
