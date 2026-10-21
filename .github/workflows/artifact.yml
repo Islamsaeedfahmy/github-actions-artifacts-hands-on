@@ -34,7 +34,7 @@ jobs:
       - name: list files
         run: ls -larth
       - name:
-        run: cat ./artifact/hello.txt
+        run: cat ./artifacts/hello.txt
 
       # - name: display hello file
       #   run: cat hello.txt
