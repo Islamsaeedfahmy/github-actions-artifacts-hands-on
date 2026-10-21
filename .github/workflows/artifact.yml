@@ -32,4 +32,4 @@ jobs:
           path: hello.txt
 
       - name: display hello file
-        runs: cat ./artifacts/hello.txt
+        run: cat ./artifacts/hello.txt
